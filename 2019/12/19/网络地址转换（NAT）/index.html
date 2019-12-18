@@ -79,14 +79,14 @@
 
 
 
-<meta name="description" content="互联网概述 计算机网络（网络） 计算机是由结点（node）和连接这些结点的链路（link）组成，结点可以是计算机、集线器、交换机或路由器组成。一般用一朵云表示网络。通过集线器或交换机组成。   互联网 网络之间通过路由器互连起来，这样就构成了一个范围更大的网络，称为互连网(internet 或 internetwork)，泛指由多个计算机网络互连二次的计算机网络。互连网并不是把计算机仅仅简单地在物">
+<meta name="description" content="NAT是解决ipv4地址短缺的方案之一 NAT是将位于子网中的主机与外网连通，子网中所有的主机都可以通过路由器的网络地址转换访问外网。对于外网来说该路由器相当于一台完整的主机，子网内所有主机对外网的访问都被视作这台“主机”发出的访问。同样，外网对子网的主机的访问也是通过访问这个路由器实现的，对于外网而言，子网内部的主机是不可见的。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="计算机网络概述">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;kcyyyy&#x2F;kcyyyy.github.io.git&#x2F;2019&#x2F;12&#x2F;19&#x2F;%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0&#x2F;index.html">
+<meta property="og:title" content="网络地址转换（NAT）">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;kcyyyy&#x2F;kcyyyy.github.io.git&#x2F;2019&#x2F;12&#x2F;19&#x2F;%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%EF%BC%88NAT%EF%BC%89&#x2F;index.html">
 <meta property="og:site_name" content="kcy的博客">
-<meta property="og:description" content="互联网概述 计算机网络（网络） 计算机是由结点（node）和连接这些结点的链路（link）组成，结点可以是计算机、集线器、交换机或路由器组成。一般用一朵云表示网络。通过集线器或交换机组成。   互联网 网络之间通过路由器互连起来，这样就构成了一个范围更大的网络，称为互连网(internet 或 internetwork)，泛指由多个计算机网络互连二次的计算机网络。互连网并不是把计算机仅仅简单地在物">
-<meta property="article:published_time" content="2019-12-18T17:13:22.000Z">
-<meta property="article:modified_time" content="2019-12-18T17:22:36.783Z">
+<meta property="og:description" content="NAT是解决ipv4地址短缺的方案之一 NAT是将位于子网中的主机与外网连通，子网中所有的主机都可以通过路由器的网络地址转换访问外网。对于外网来说该路由器相当于一台完整的主机，子网内所有主机对外网的访问都被视作这台“主机”发出的访问。同样，外网对子网的主机的访问也是通过访问这个路由器实现的，对于外网而言，子网内部的主机是不可见的。">
+<meta property="article:published_time" content="2019-12-18T20:48:23.000Z">
+<meta property="article:modified_time" content="2019-12-18T20:49:44.370Z">
 <meta property="article:author" content="kcy">
 <meta name="twitter:card" content="summary">
 
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/计算机网络概述/"/>
+  <link rel="canonical" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/网络地址转换（NAT）/"/>
 
 
 
 
 
-  <title>计算机网络概述 | kcy的博客</title>
+  <title>网络地址转换（NAT） | kcy的博客</title>
   
 
 
@@ -275,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%EF%BC%88NAT%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kcy">
@@ -292,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">计算机网络概述</h1>
+          <h1 class="post-title" itemprop="name headline">网络地址转换（NAT）</h1>
         
 
         <div class="post-meta">
@@ -304,7 +304,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T01:13:22+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T04:48:23+08:00">
                 2019-12-19
               </time>
             
@@ -314,6 +314,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资料</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -342,74 +364,8 @@
       
 
       
-        <h3 id="互联网概述"><a href="#互联网概述" class="headerlink" title="互联网概述"></a>互联网概述</h3><ul>
-<li>计算机网络（网络）<blockquote>
-<p>计算机是由结点（node）和连接这些结点的链路（link）组成，结点可以是计算机、集线器、交换机或路由器组成。一般用一朵云表示网络。通过集线器或交换机组成。</p>
-</blockquote>
-</li>
-<li>互联网<blockquote>
-<p>网络之间通过路由器互连起来，这样就构成了一个范围更大的网络，称为互连网(internet 或 internetwork)，泛指由多个计算机网络互连二次的计算机网络。<br>互连网并不是把计算机仅仅简单地在物理上连接起来，这样并不能达到计算机之间交换数据。还必须安装交换数据的软件。</p>
-</blockquote>
-</li>
-<li>因特网<blockquote>
-<p>因特网（Internet）特指全球最大的互连网。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="互联网发展的三个阶段"><a href="#互联网发展的三个阶段" class="headerlink" title="互联网发展的三个阶段"></a>互联网发展的三个阶段</h3><ul>
-<li>第一阶段是从单个网络ARPANET向互连网发展的过程。</li>
-<li>第二阶段是建成了三级结构的互联网，分为：主干网、地区网、和校园网（企业网）。主干网连接各个地区网，地区网连接各个校园网（企业网）。</li>
-<li>第三阶段形成了多层次ISP结构的互联网。ISP(Internet Service Provider) 互联网服务提供商。例如：中国联通、中国电信。他们运行主干ISP网络</li>
-</ul>
-<h3 id="互联网的组成"><a href="#互联网的组成" class="headerlink" title="互联网的组成"></a>互联网的组成</h3><ul>
-<li>边缘部分：<blockquote>
-<p>有所有连接在互联网上的主机组成，这些主机又称为端系统，可以使个人电脑、很小的网络摄像头、ISP等，边缘部分利用核心部分提供的服务使众多主机之间能够互相通信（指：两个主机之间的两个进程之间进行通信）。在网络边缘的端系统之间的通信方式可以分为两大类：客户-服务器方式（C/S方式）和 对等方式（P2P方式）。</p>
-</blockquote>
-</li>
-<li>客户-服务器方式（C/S）：<blockquote>
-<p>客户（client）和 服务器（server）都是指通信中所涉及的两个应用进程。客户-服务器方式所描述的是进程之间服务和被服务之间的关系。客户是服务请求方，服务器是服务提供方。</p>
-</blockquote>
-</li>
-<li>客户程序特点<blockquote>
-<p>被用户调用后运行，在通信时向远程服务器发起通信（请求服务）。因此，客户程序必须知道服务器的地址。<br>不需要特殊的硬件和很复杂的操作系统。</p>
-</blockquote>
-</li>
-<li>服务器程序特点<blockquote>
-<p>是一种专门用来提供某种服务的程序，可同时处理多个本地或远程客户的请求。<br>自系统启动后就一直不断地运行，被动地等待并接受来自各地用户的通信请求。因此，服务器程序不需要知道客户程序的地址。<br>一般需要强大的硬件和高级的操作系统支持。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="互联网的核心部分"><a href="#互联网的核心部分" class="headerlink" title="互联网的核心部分"></a>互联网的核心部分</h3><blockquote>
-<p>在网络核心部分其特殊作用的是路由器(router)，它是一种专用计算机（但不叫主机）。路由器是实现分组交换(packet switching)的关键构建，它的任务是转发收到的分组，是网络核心中最重要的内容。</p>
-</blockquote>
-<h3 id="计算机网络的类别"><a href="#计算机网络的类别" class="headerlink" title="计算机网络的类别"></a>计算机网络的类别</h3><ul>
-<li><p>按照网络的作用范围来分类：</p>
-<ul>
-<li>广域网 WAN（Wide Area Network） 广域网的作用范围通常几十到几千公里，是互联网的核心部分，其任务是长距离运送主机所发送的数据。</li>
-<li>城域网 MAN（Metropolitan Area Network） 城域网的作用范围一般是一个城市。</li>
-<li>局域网 LAN（Local Area Network） 局域网一般用微型计算机或工作站通过高速通信线路相连，但范围较小。</li>
-<li>个人区域网 PAN（Personal Area Network） 个人区域网就是在个人工作的地方把属于个人使用的电子设备用无线技术连接起来的网络。</li>
-</ul>
-</li>
-<li><p>按照网络的使用者分类：</p>
-<ul>
-<li>公用网（public network） 指电信公司出资建造的大型网络，所有缴费的人都能用。</li>
-<li>专用网（private network） 某个部门为满足本单位的特殊业务工作的需要而建造的网络。这种网络不向本单位以外的人提供服务。例如：军队、铁路、银行等系统均有本系统的专用网。</li>
-</ul>
-</li>
-</ul>
-<h3 id="计算机网络的体系结构"><a href="#计算机网络的体系结构" class="headerlink" title="计算机网络的体系结构"></a>计算机网络的体系结构</h3><blockquote>
-<p>OSI七层模型:</p>
-</blockquote>
-<ul>
-<li>应用层：就是能产生网络流量的应用程序。</li>
-<li>表示层：数据的表示、加密、压缩。</li>
-<li>会话层：应用程序之间建立的会话。</li>
-<li>传输层：可靠传输（建立会话）、不可靠传输、流量 控制</li>
-<li>网络层：进行逻辑地址寻址，实现不同网络之间的路径选择。</li>
-<li>数据链路层：封装数据、添加物理层地址</li>
-<li>物理层：提供物理规范，如线缆标准、接口标准、电压。</li>
-</ul>
+        <p>NAT是解决ipv4地址短缺的方案之一</p>
+<p>NAT是将位于子网中的主机与外网连通，子网中所有的主机都可以通过路由器的网络地址转换访问外网。对于外网来说该路由器相当于一台完整的主机，子网内所有主机对外网的访问都被视作这台“主机”发出的访问。同样，外网对子网的主机的访问也是通过访问这个路由器实现的，对于外网而言，子网内部的主机是不可见的。</p>
 
       
     </div>
@@ -434,8 +390,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/12/19/%E5%BA%94%E7%94%A8%E5%B1%82/" rel="next" title="应用层">
-                <i class="fa fa-chevron-left"></i> 应用层
+              <a href="/2019/12/19/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE%EF%BC%88ARP%EF%BC%89/" rel="next" title="地址解析协议（ARP）">
+                <i class="fa fa-chevron-left"></i> 地址解析协议（ARP）
               </a>
             
           </div>
@@ -443,6 +399,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/12/19/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E6%8A%80%E6%9C%AF/" rel="prev" title="数据可视化技术">
+                数据可视化技术 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -494,17 +454,8 @@
       
 
       
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
-            站点概览
-          </li>
-        </ul>
-      
 
-      <section class="site-overview-wrap sidebar-panel">
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -519,7 +470,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -530,7 +481,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
@@ -555,22 +506,6 @@
         </div>
       </section>
 
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#互联网概述"><span class="nav-number">1.</span> <span class="nav-text">互联网概述</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#互联网发展的三个阶段"><span class="nav-number">2.</span> <span class="nav-text">互联网发展的三个阶段</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#互联网的组成"><span class="nav-number">3.</span> <span class="nav-text">互联网的组成</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#互联网的核心部分"><span class="nav-number">4.</span> <span class="nav-text">互联网的核心部分</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算机网络的类别"><span class="nav-number">5.</span> <span class="nav-text">计算机网络的类别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#计算机网络的体系结构"><span class="nav-number">6.</span> <span class="nav-text">计算机网络的体系结构</span></a></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
       
 
       

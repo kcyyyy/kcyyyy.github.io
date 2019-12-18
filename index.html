@@ -272,7 +272,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/bootstrap4%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kcy">
@@ -291,7 +291,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/12/19/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%E6%A6%82%E8%BF%B0/" itemprop="url">计算机网络概述</a></h1>
+                <a class="post-title-link" href="/2019/12/19/bootstrap4%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/" itemprop="url">bootstrap4源码阅读体会</a></h1>
         
 
         <div class="post-meta">
@@ -303,7 +303,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T01:13:22+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T04:54:47+08:00">
                 2019-12-19
               </time>
             
@@ -313,6 +313,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资料</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -343,76 +365,22 @@
       
         
           
-            <h3 id="互联网概述"><a href="#互联网概述" class="headerlink" title="互联网概述"></a>互联网概述</h3><ul>
-<li>计算机网络（网络）<blockquote>
-<p>计算机是由结点（node）和连接这些结点的链路（link）组成，结点可以是计算机、集线器、交换机或路由器组成。一般用一朵云表示网络。通过集线器或交换机组成。</p>
-</blockquote>
-</li>
-<li>互联网<blockquote>
-<p>网络之间通过路由器互连起来，这样就构成了一个范围更大的网络，称为互连网(internet 或 internetwork)，泛指由多个计算机网络互连二次的计算机网络。<br>互连网并不是把计算机仅仅简单地在物理上连接起来，这样并不能达到计算机之间交换数据。还必须安装交换数据的软件。</p>
-</blockquote>
-</li>
-<li>因特网<blockquote>
-<p>因特网（Internet）特指全球最大的互连网。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="互联网发展的三个阶段"><a href="#互联网发展的三个阶段" class="headerlink" title="互联网发展的三个阶段"></a>互联网发展的三个阶段</h3><ul>
-<li>第一阶段是从单个网络ARPANET向互连网发展的过程。</li>
-<li>第二阶段是建成了三级结构的互联网，分为：主干网、地区网、和校园网（企业网）。主干网连接各个地区网，地区网连接各个校园网（企业网）。</li>
-<li>第三阶段形成了多层次ISP结构的互联网。ISP(Internet Service Provider) 互联网服务提供商。例如：中国联通、中国电信。他们运行主干ISP网络</li>
-</ul>
-<h3 id="互联网的组成"><a href="#互联网的组成" class="headerlink" title="互联网的组成"></a>互联网的组成</h3><ul>
-<li>边缘部分：<blockquote>
-<p>有所有连接在互联网上的主机组成，这些主机又称为端系统，可以使个人电脑、很小的网络摄像头、ISP等，边缘部分利用核心部分提供的服务使众多主机之间能够互相通信（指：两个主机之间的两个进程之间进行通信）。在网络边缘的端系统之间的通信方式可以分为两大类：客户-服务器方式（C/S方式）和 对等方式（P2P方式）。</p>
-</blockquote>
-</li>
-<li>客户-服务器方式（C/S）：<blockquote>
-<p>客户（client）和 服务器（server）都是指通信中所涉及的两个应用进程。客户-服务器方式所描述的是进程之间服务和被服务之间的关系。客户是服务请求方，服务器是服务提供方。</p>
-</blockquote>
-</li>
-<li>客户程序特点<blockquote>
-<p>被用户调用后运行，在通信时向远程服务器发起通信（请求服务）。因此，客户程序必须知道服务器的地址。<br>不需要特殊的硬件和很复杂的操作系统。</p>
-</blockquote>
-</li>
-<li>服务器程序特点<blockquote>
-<p>是一种专门用来提供某种服务的程序，可同时处理多个本地或远程客户的请求。<br>自系统启动后就一直不断地运行，被动地等待并接受来自各地用户的通信请求。因此，服务器程序不需要知道客户程序的地址。<br>一般需要强大的硬件和高级的操作系统支持。</p>
-</blockquote>
-</li>
-</ul>
-<h3 id="互联网的核心部分"><a href="#互联网的核心部分" class="headerlink" title="互联网的核心部分"></a>互联网的核心部分</h3><blockquote>
-<p>在网络核心部分其特殊作用的是路由器(router)，它是一种专用计算机（但不叫主机）。路由器是实现分组交换(packet switching)的关键构建，它的任务是转发收到的分组，是网络核心中最重要的内容。</p>
-</blockquote>
-<h3 id="计算机网络的类别"><a href="#计算机网络的类别" class="headerlink" title="计算机网络的类别"></a>计算机网络的类别</h3><ul>
-<li><p>按照网络的作用范围来分类：</p>
-<ul>
-<li>广域网 WAN（Wide Area Network） 广域网的作用范围通常几十到几千公里，是互联网的核心部分，其任务是长距离运送主机所发送的数据。</li>
-<li>城域网 MAN（Metropolitan Area Network） 城域网的作用范围一般是一个城市。</li>
-<li>局域网 LAN（Local Area Network） 局域网一般用微型计算机或工作站通过高速通信线路相连，但范围较小。</li>
-<li>个人区域网 PAN（Personal Area Network） 个人区域网就是在个人工作的地方把属于个人使用的电子设备用无线技术连接起来的网络。</li>
-</ul>
-</li>
-<li><p>按照网络的使用者分类：</p>
-<ul>
-<li>公用网（public network） 指电信公司出资建造的大型网络，所有缴费的人都能用。</li>
-<li>专用网（private network） 某个部门为满足本单位的特殊业务工作的需要而建造的网络。这种网络不向本单位以外的人提供服务。例如：军队、铁路、银行等系统均有本系统的专用网。</li>
-</ul>
-</li>
-</ul>
-<h3 id="计算机网络的体系结构"><a href="#计算机网络的体系结构" class="headerlink" title="计算机网络的体系结构"></a>计算机网络的体系结构</h3><blockquote>
-<p>OSI七层模型:</p>
-</blockquote>
-<ul>
-<li>应用层：就是能产生网络流量的应用程序。</li>
-<li>表示层：数据的表示、加密、压缩。</li>
-<li>会话层：应用程序之间建立的会话。</li>
-<li>传输层：可靠传输（建立会话）、不可靠传输、流量 控制</li>
-<li>网络层：进行逻辑地址寻址，实现不同网络之间的路径选择。</li>
-<li>数据链路层：封装数据、添加物理层地址</li>
-<li>物理层：提供物理规范，如线缆标准、接口标准、电压。</li>
-</ul>
+          bootstrap使用了很长时间，是页面快速开发的一把利器。最近，bootstrap4马上呼之欲出，春节闲来无事，就从源码层面解读下。
 
-          
+移动优先
+
+在移动互联网时代，很多公司都坚持移动端优先的原则，bootstrap也迎合了这种需求，具体表现在如下方面:
+
+相对单位: %、rem的大量使用
+gri
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/19/bootstrap4%E6%BA%90%E7%A0%81%E9%98%85%E8%AF%BB%E4%BD%93%E4%BC%9A/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -459,7 +427,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E5%BA%94%E7%94%A8%E5%B1%82/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E6%8A%80%E6%9C%AF/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kcy">
@@ -478,7 +446,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/12/19/%E5%BA%94%E7%94%A8%E5%B1%82/" itemprop="url">应用层</a></h1>
+                <a class="post-title-link" href="/2019/12/19/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E6%8A%80%E6%9C%AF/" itemprop="url">数据可视化技术</a></h1>
         
 
         <div class="post-meta">
@@ -490,7 +458,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T00:06:49+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T04:51:34+08:00">
                 2019-12-19
               </time>
             
@@ -513,8 +481,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资料</span>
                   </a>
                 </span>
 
@@ -552,109 +520,26 @@
       
         
           
-            <h3 id="应用层概念"><a href="#应用层概念" class="headerlink" title="应用层概念"></a>应用层概念</h3><blockquote>
-<p>应用层的具体作用就是规定应用进程在通信时所遵循的协议</p>
-</blockquote>
-<h3 id="域名系统DNS"><a href="#域名系统DNS" class="headerlink" title="域名系统DNS"></a>域名系统DNS</h3><blockquote>
-<p>域名系统(DNS)是因特网使用的命名系统，用来把便于人们使用的机器名字转化为IP地址。</p>
-</blockquote>
-<blockquote>
-<p>在1983年，因特网就开始采用层次树状结构的命名方法，并使用分布式的域名系统。</p>
-</blockquote>
-<blockquote>
-<p>DNS使大多数的名字都在本地解析。域名到IP地址的解析，是由分布在因特网上的许多域名服务(也称域名服务器)共同完成的。域名服务器程序在专设的结点上运行，而人们也常把运行域名服务程序的机器称为域名服务器。</p>
-</blockquote>
-<blockquote>
-<p>域名的解析过程：<br>第一，主机向本地域名服务器的查询一般都采用递归查询。<br>第二，本地域名服务器向根域名服务器的查询通常采用迭代查询。</p>
-</blockquote>
-<h3 id="HDCP服务"><a href="#HDCP服务" class="headerlink" title="HDCP服务"></a>HDCP服务</h3><blockquote>
-<p>动态主机配置协议 DHCP：负责给互联网上的计算机提供动态的IP地址。<br>连接到因特网的计算机都需要配置以下几个项目： </p>
-<ol>
-<li>IP 地址 </li>
-<li>子网掩码 </li>
-<li>默认路由器的 IP 地址即网关 </li>
-<li>域名服务器的 IP 地址</li>
-</ol>
-</blockquote>
-<blockquote>
-<p>IP地址获取方式有两种：</p>
-<ul>
-<li>静态IP是人工自己指定的，一般公司自己组建的局域网、学校机房的固定的计算机、机房服务器、互联网上的大型服务器，凡是位置固定不动的，都用静态IP地址。 </li>
-<li>动态IP地址是用DHCP服务器来分配的地址，适用于计算机位置不固定、家庭拨号上网等情况。可以避免产生IP地址冲突。</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>DHCP服务器既可以给本网段计算机分配地址，也可以跨网段分配地址。DHCP服务器想给几个网段的计算机分配地址，就得先创建几个作用域。区别是，本网段的计算机请求地址，发广播，DHCP服务器能直接收到请求；而外网段的计算机请求地址，先发广播让外网段的网关收到（网关隔绝广播，为了能使这条请求发出去，路由器上需要特殊配置一下Router(config-if)#ip helper-address 192.168.0.100这个IP是DHCP服务器地址），该网关把请求通过互联网发送给DHCP服务器（这时候就是点对点通信而不是广播了）</p>
-</blockquote>
-<h3 id="FTP文件传送协议"><a href="#FTP文件传送协议" class="headerlink" title="FTP文件传送协议"></a>FTP文件传送协议</h3><blockquote>
-<p>FTP连接方式 </p>
-<ul>
-<li>控制连接：标准端口为21，用于发送FTP命令信息。 </li>
-<li>数据连接：标准端口为20，用于上传、下载数据。 </li>
-</ul>
-</blockquote>
-<blockquote>
-<p>客户端选择数据连接的建立类型 </p>
-<ul>
-<li>主动模式：FTP客户端告诉FTP服务器使用什么端口，FTP服务器就主动用自己的20端口和FTP客户端的这个端口建立连接。 </li>
-<li>被动模式：服务端在指定范围内打开一个新的端口，被动等待客户端发起连接。 </li>
-</ul>
-</blockquote>
-<blockquote>
-<p>FTP传输模式 </p>
-<ul>
-<li>文本模式：ASCII模式，以文本序列传输数据 </li>
-<li>二进制模式：Binary模式，以二进制序列传输数据 </li>
-</ul>
-</blockquote>
-<h3 id="远程终端协议TELNET"><a href="#远程终端协议TELNET" class="headerlink" title="远程终端协议TELNET"></a>远程终端协议TELNET</h3><blockquote>
-<p>只要网络通，就能利用telnet输入命令来远程控制另一台计算机。一般多用来远程配置路由器。使用TCP的23端口。</p>
-</blockquote>
-<h3 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h3><blockquote>
-<p>是用的最多的协议，用来访问网站的协议。使用TCP的80端口。</p>
-</blockquote>
-<blockquote>
-<p>为何访问网站要用域名？</p>
-<ul>
-<li>网站的标识有IP地址、端口和域名。因此访问网站时，为了区分不同的网站，可以使用不同的IP地址、不同的端口或不同的主机头（域名）。</li>
-<li>同一个服务器上如果有好几个网站，这些网站如果都使用一个服务器IP地址，都使用80端口，会有冲突。解决方法一是给服务器多加几个IP地址，一个网站用一个；二是给不同网站用不同的端口号，不要都用80端口。然而这两种方式都不方便。如果服务器只有一个地址，并且端口号只想用80，那么可以在服务器设置网站的访问方式，设置成只能用域名来访问。但是用域名访问，还需要在DNS里把记录加上。目前网络上各大服务器中存储的成千上万的网站，都是用最后一种方法，用域名访问来实现的。</li>
-</ul>
-</blockquote>
-<blockquote>
-<p>使用Web代理服务器访问网站</p>
-<p>访问网站时不直接访问，而是先访问代理服务器，代理服务器去找目标网站，然后再把得到的网站返回给请求计算机。</p>
-</blockquote>
-<blockquote>
-<p>好处： </p>
-<ul>
-<li>节省内网访问Internet的带宽，加快上网速度。注意：别傻逼地用国外的代理上国内的网站，那得慢死！ </li>
-<li>通过Web代理绕过防火墙。翻墙软件就是使用国外的代理来上网的，能避免国内路由器的封锁； </li>
-<li>避免追踪。如果在网上发帖子，不想让别人查到自己的地址，那就用代理在网上发帖子。ISP那边的记录，只能查到是代理在发帖子，查不到自己这里。 </li>
-<li>不用配网关（要上网的电脑和代理服务器在一个网段）、不用配DNS也能上网。 </li>
-</ul>
-</blockquote>
-<blockquote>
-<p>应用：在一个网段的计算机里，只要有一台计算机能上网，其他计算机就可以通过这台能上网的计算机上网。做法是将这台能上网的计算机设置成代理服务器，其他计算机指向它。</p>
-</blockquote>
-<h3 id="电子邮件服务"><a href="#电子邮件服务" class="headerlink" title="电子邮件服务"></a>电子邮件服务</h3><blockquote>
-<ul>
-<li>发送邮件的协议：SMTP使用TCP的25端口 </li>
-<li>读取邮件的协议：POP3 使用TCP的110端口和 IMAP使用TCP的143端口 </li>
-</ul>
-</blockquote>
-<blockquote>
-<p>收发邮件的过程如下：</p>
-<ol>
-<li>发件人调用PC机中的用户代理撰写和编辑要发送的邮件。 </li>
-<li>发件人的用户代理把邮件用SMTP协议发给发送方邮件服务器。 </li>
-<li>SMTP服务器把邮件临时存放在邮件缓存队列中，等待发送。 </li>
-<li>发送方邮件服务器的SMTP客户与接收方邮件服务器的SMTP服务器建立TCP连接，然后就把邮件缓存队列中的邮件依次发送出去。 </li>
-<li>运行在接收方邮件服务器中的SMTP服务器进程收到邮件后，把邮件放入收件人的用户邮箱中，等待收件人进行读取。 </li>
-<li>收件人在打算收信时，就运行PC机中的用户代理，使用POP3（或IMAP）协议读取发送给自己的邮件。</li>
-</ol>
-</blockquote>
+          目前数据可视化工具多如牛毛，尤其是随着大数据炒的越来越热，数据可视化成为一个很重要的前端分支。简单了解下业内主要的可视化工具的用法，以便应对复杂多样的业务需求。
 
-          
+底层实现技术
+
+canvas：基于像素的渲染技术，放大缩小很麻烦
+SVG：基于XML
+VML：只是被IE支持
+
+
+HighChart
+
+
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/19/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E6%8A%80%E6%9C%AF/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -701,7 +586,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E7%BD%91%E7%BB%9C%E5%B1%82/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%EF%BC%88NAT%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kcy">
@@ -720,7 +605,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/12/19/%E7%BD%91%E7%BB%9C%E5%B1%82/" itemprop="url">网络层</a></h1>
+                <a class="post-title-link" href="/2019/12/19/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%EF%BC%88NAT%EF%BC%89/" itemprop="url">网络地址转换（NAT）</a></h1>
         
 
         <div class="post-meta">
@@ -732,7 +617,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T00:06:38+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T04:48:23+08:00">
                 2019-12-19
               </time>
             
@@ -755,8 +640,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资料</span>
                   </a>
                 </span>
 
@@ -794,148 +679,16 @@
       
         
           
-            <h3 id="网络层的概念"><a href="#网络层的概念" class="headerlink" title="网络层的概念"></a>网络层的概念</h3><p>在位于不同地理位置的网络中的两个主机系统之间提供连接和路径选择。Internet的发展使得从世界各站点访问信息的用户数大大增加，而网络层正是管理这种连接的层。</p>
-<h3 id="网络层的功能"><a href="#网络层的功能" class="headerlink" title="网络层的功能"></a>网络层的功能</h3><ul>
-<li>转发</li>
-</ul>
-<blockquote>
-<p>将分组从一个输入链路接口转移到适当的输出链路接口的路由器本地动作，通过转发表实现。</p>
-</blockquote>
-<ul>
-<li>路由选择</li>
-</ul>
-<blockquote>
-<p>当分组从发送方流向接收方时，网络层必须决定这些分组所采用的路由或路径，通过路由选择算法实现。路由选择算法决定了插入路由器的转发表中的值。</p>
-</blockquote>
-<h3 id="网际协议IP"><a href="#网际协议IP" class="headerlink" title="网际协议IP"></a>网际协议IP</h3><p>使用 IP 协议，可以把异构的物理网络连接起来，使得在网络层看起来好像是一个统一的网络。<br>与IP协议配套使用的还有三个协议:</p>
-<ul>
-<li>地址解析协议 ARP（Address Resolution Protocol）：每个主机都设有一个ARP高速缓存(ARP cache)，如果不存在，则进行广播，找到后返回ARP响应，得到目的主机的物理地址</li>
-<li>网际控制报文协议 ICMP（Internet Control Message Protocol）：用于提高IP数据报交付成功的机会，允许主机或路由器报告差错情况和提供有关异常情况的报告，不是高层协议，而是IP层的协议。ICMP报文作为IP层数据报的数据</li>
-<li>网际组管理协议 IGMP（Internet Group Management Protocol）</li>
-</ul>
-<h3 id="IPV4数据报格式"><a href="#IPV4数据报格式" class="headerlink" title="IPV4数据报格式"></a>IPV4数据报格式</h3><ul>
-<li>版本</li>
-</ul>
-<blockquote>
-<p>4 比特，有 4（IPv4）和 6（IPv6）两个值，规定了数据报的 IP 协议版本。</p>
-</blockquote>
-<ul>
-<li>首部长度</li>
-</ul>
-<blockquote>
-<p>4 比特，因此最大值为 15。值为 1 表示的是 1 个 32 位字的长度，也就是 4 字节。因为固定部分长度为 20 字节，因此该值最小为 5。如果可选字段的长度不是 4 字节的整数倍，就用尾部的填充部分来填充。确定 IP 数据报中数据部分实际从哪里开始。大部分 IP 数据报不包含此选项，默认 20 字节长度。</p>
-</blockquote>
-<ul>
-<li>区分服务</li>
-</ul>
-<blockquote>
-<p>用来获得更好的服务，一般情况下不使用。使得不同类型的 IP 数据报能够相互区别开来（如实时数据报与非实时流量等）。</p>
-</blockquote>
-<ul>
-<li>总长度</li>
-</ul>
-<blockquote>
-<p>16 比特，包括首部长度和数据部分长度。以字节计算。</p>
-</blockquote>
-<ul>
-<li>生存时间</li>
-</ul>
-<blockquote>
-<p>TTL，它的存在是为了防止无法交付的数据报在互联网中不断兜圈子。以路由器跳数为单位，当 TTL 为 0 时就丢弃数据报。</p>
-</blockquote>
-<ul>
-<li>协议</li>
-</ul>
-<blockquote>
-<p>指出携带的数据应该上交给哪个协议进行处理，例如 ICMP、TCP、UDP 等。仅在一个 IP 数据报到达其最终目的地时才有用。协议号作用类似于端口号，将网络层与运输层绑定。（端口号绑定运输层与应用层）</p>
-</blockquote>
-<ul>
-<li>首部检验和:</li>
-</ul>
-<blockquote>
-<p>因为数据报每经过一个路由器，都要重新计算检验和，因此检验和不包含数据部分，仅针对首部，可以减少计算的工作量。用于帮助路由器检测收到的 IP 数据报中的比特错误。</p>
-</blockquote>
-<ul>
-<li>标志:</li>
-</ul>
-<blockquote>
-<p>最后一个片的标志比特被设为 0，其他片的标志为 1。保证完整性。</p>
-</blockquote>
-<ul>
-<li>标识</li>
-</ul>
-<blockquote>
-<p>在数据报长度过长从而发生分片的情况下，相同数据报的不同分片具有相同的标识符。主机将其发送的每个数据报标识号加 1，目的地端系统通过检查标识号判定是否来自同一数据报。</p>
-</blockquote>
-<ul>
-<li>片漂移</li>
-</ul>
-<blockquote>
-<p>和标识符一起，用于发生分片的情况。片偏移的单位为 8 字节。指示片属于初始数据报的哪个位置，以保证有序性。</p>
-</blockquote>
-<blockquote>
-<p>​分片后的重组由端系统完成，在 IP 层完全重组后才会被传递给运输层，若数据不完整则被丢弃（若运输层使用 TCP，则通过重传恢复丢包）。</p>
-</blockquote>
-<blockquote>
-<p>​    分片存在问题：复杂化路由器与端系统、致命的 DoS 攻击，如 Jolt2（所发送的片流中不存在偏移量为 0 的片导致重组崩溃）或发送交迭的 IP 片，无法适当排列，导致重组崩溃。</p>
-<ul>
-<li>选项 / 可选部分：<br>允许 IP 首部被扩展，但是很少使用，由于对每个数据报首部不包括选项字段中的信息可节约开销，IPv6 数据报也去除该字段。</li>
-<li>数据 / 有效载荷：<br>通常情况下指要交付给目的地的运输层报文段（TCP / UDP），特殊情况下可传输 ICMP 报文。</li>
-</ul>
-</blockquote>
-<h3 id="IP地址编址方式"><a href="#IP地址编址方式" class="headerlink" title="IP地址编址方式"></a>IP地址编址方式</h3><p>IP 地址的编址方式利用点分十进制记法，经历了三个历史阶段：</p>
-<ul>
-<li>分类</li>
-<li>子网划分</li>
-<li>无分类</li>
-</ul>
-<h4 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h4><p>由两部分组成，网络号和主机号，其中不同分类具有不同的网络号长度，并且是固定的。</p>
-<p>IP 地址 ::= {&lt;网络号&gt;, &lt; 主机号 &gt;}</p>
-<ul>
-<li><p>A类: A 类地址总共有 128 个地址块，其中 3 个地址块用作特殊用途，因此可以在互联网上使用的有 125 个，每一个地址块中可以拥有个 224−2=16777216−2=16777214<br>2<br>24<br>−2=16777216−2=16777214 主机。（扣除的两个为特殊地址，全 0 和全 1）</p>
-</li>
-<li><p>B类：B 类地址总共有 16384 个地址块，其中 16 个地址块用作特殊用途，因此可以分配给企业使用的地址块有 16368 个，每一个地址块中可以拥有个 $ 2^{16}-2 $ 主机。</p>
-</li>
-<li><p>C类：C 类地址总共有 2097152 个地址块，其中 256 个地址块用作特殊用途，因此可以分配给企业使用的地址块有 2096896 个，每一个地址块中可以拥有个 254 主机。</p>
-</li>
-<li><p>D类：用于多播使用，只有一个地址块。</p>
-</li>
-<li><p>E类：保留未用，只有一个地址块。</p>
-</li>
-<li><p>分类范围</p>
-</li>
-<li><p>特殊地址</p>
-<blockquote>
-<p>网络号为 127 的地址：被保留用于环回测试。指向本地结点并允许结点发送测试数据包给自己而不产生网络流量</p>
-</blockquote>
-<blockquote>
-<p>结点地址（主机号）全为 0：意指 “网络地址”</p>
-</blockquote>
-<blockquote>
-<p>结点地址全为 1：意指指定网络的 “所有结点”（广播地址），例如：128.2.255.255 意指 128.2 网络的 “所有结点”</p>
-</blockquote>
-<blockquote>
-<p>全 0 的网络地址（即 0 网段）：被保留用来指向默认路由</p>
-</blockquote>
-<blockquote>
-<p>route -PRINT 可以用来查看路由表信息</p>
-</blockquote>
-</li>
-</ul>
-<h4 id="子网划分"><a href="#子网划分" class="headerlink" title="子网划分"></a>子网划分</h4><p><strong>子网定义</strong>：为了确定子网，分开主机和路由器的每个接口，产生几个隔离的网络岛，使用接口端接这些隔离的网络的端点。这些隔离的网络中的每一个都叫做一个子网。</p>
-<p>通过在主机号字段中拿一部分作为子网号，把两级 IP 地址划分为三级 IP 地址。</p>
-<p>IP 地址 ::= {&lt;网络号&gt;, &lt; 子网号 &gt;, &lt; 主机号 &gt;}</p>
-<p>要使用子网，必须配置子网掩码。一个 B 类地址的默认子网掩码为 255.255.0.0，如果 B 类地址的子网占两个比特，那么子网掩码为 11111111 11111111 11000000 00000000，也就是 255.255.192.0。</p>
-<p>注意，外部网络看不到子网的存在。</p>
-<h4 id="无类别域间路由选择"><a href="#无类别域间路由选择" class="headerlink" title="无类别域间路由选择"></a>无类别域间路由选择</h4><p>无分类编址 CIDR 消除了传统 A 类、B 类和 C 类地址以及划分子网的概念，使用网络前缀和主机号来对 IP 地址进行编码，网络前缀的长度可以根据需要变化。</p>
-<p>IP 地址 ::= {&lt;网络前缀号&gt;, &lt; 主机号 &gt;}</p>
-<p>实例：a.b.c.d/x，x 指示了地址第一部分中的比特数。外部路由器仅需考虑地址的前缀比特 x 即可进行数据报转发。剩余的 32 - x 比特可用于区分该组织内部设备。</p>
-<p>CIDR 的记法上采用在 IP 地址后面加上网络前缀长度的方法，例如 128.14.35.7/20 表示前 20 位为网络前缀。</p>
-<p>CIDR 的地址掩码可以继续称为子网掩码，子网掩码首 1 长度为网络前缀的长度。</p>
-<p>一个 CIDR 地址块中有很多地址，一个 CIDR 表示的网络就可以表示原来的很多个网络，并且在路由表中只需要一个路由就可以代替原来的多个路由，减少了路由表项的数量。把这种使用单个网络前缀通告多个网络的能力、通过使用网络前缀来减少路由表项的方式称为路由聚合，也称为 构成超网 。</p>
-<p>在路由表中的项目由 “网络前缀” 和 “下一跳地址” 组成，在查找时可能会得到不止一个匹配结果，应当采用最长前缀匹配来确定应该匹配哪一个。</p>
-
-          
+          NAT是解决ipv4地址短缺的方案之一
+NAT是将位于子网中的主机与外网连通，子网中所有的主机都可以通过路由器的网络地址转换访问外网。对于外网来说该路由器相当于一台完整的主机，子网内所有主机对外网的访问都被视作这台“主机”发出的访问。同样，外网对子网的主机的访问也是通过访问这个路由器实现的，对于外网
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/19/%E7%BD%91%E7%BB%9C%E5%9C%B0%E5%9D%80%E8%BD%AC%E6%8D%A2%EF%BC%88NAT%EF%BC%89/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -982,7 +735,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E8%BF%90%E8%BE%93%E5%B1%82/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE%EF%BC%88ARP%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kcy">
@@ -1001,7 +754,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/12/19/%E8%BF%90%E8%BE%93%E5%B1%82/" itemprop="url">运输层</a></h1>
+                <a class="post-title-link" href="/2019/12/19/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE%EF%BC%88ARP%EF%BC%89/" itemprop="url">地址解析协议（ARP）</a></h1>
         
 
         <div class="post-meta">
@@ -1013,7 +766,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T00:06:21+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T04:46:18+08:00">
                 2019-12-19
               </time>
             
@@ -1036,8 +789,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资料</span>
                   </a>
                 </span>
 
@@ -1075,66 +828,16 @@
       
         
           
-            <h1 id="运输层"><a href="#运输层" class="headerlink" title="运输层"></a>运输层</h1><h3 id="运输层概念"><a href="#运输层概念" class="headerlink" title="运输层概念"></a>运输层概念</h3><p>运输层提供了进程间的逻辑通信，运输层向高层用户屏蔽了下面网络层的核心细节，使应用程序看起来像是在两个运输层实体之间有一条端到端的逻辑通信信道。</p>
-<h3 id="运输层的两个主要协议"><a href="#运输层的两个主要协议" class="headerlink" title="运输层的两个主要协议"></a>运输层的两个主要协议</h3><h4 id="用户数据报协议UDP（User-Datagram-Protocol）"><a href="#用户数据报协议UDP（User-Datagram-Protocol）" class="headerlink" title="用户数据报协议UDP（User Datagram Protocol）"></a>用户数据报协议UDP（User Datagram Protocol）</h4><p>UDP只在IP数据报服务之上增加了复用分用以及差错检测的功能。</p>
-<p>主要特点:</p>
-<ol>
-<li>无连接的</li>
-<li>尽最大努力交付</li>
-<li>UDP是面向报文的。发送发的UDP对应用程序交下来的报文，在添加首部后就向下交付IP层。UDP对应用层交下来的报文，既不合并，也不拆分，而是保留这些报文的边界。</li>
-<li>UDP没有拥塞控制。因此网络出现拥塞不会使源主机的发送速率降低。这对如IP电话、实时视频会议的实时应用很重要。这些应用要求源主机以恒定的速率发送数据。并且允许在网络发生拥塞时丢失一些数据，但不允许数据有太大时延。</li>
-<li>UDP支持一对一、一对多、多对一、多对多的交互通信。</li>
-<li>UDP的首部只有8字节，开销小。</li>
-</ol>
-<h4 id="传输控制协议TCP（Transmission-Control-Protocol）"><a href="#传输控制协议TCP（Transmission-Control-Protocol）" class="headerlink" title="传输控制协议TCP（Transmission Control Protocol）"></a>传输控制协议TCP（Transmission Control Protocol）</h4><p>每一条TCP连接只能有两个端点(endpoint,一个发,一个收),每一条TCP连接只能是点对点的(一对一)<br>主要特点:</p>
-<ol>
-<li>面向连接</li>
-<li>每一条TCP协议只能是点对点的</li>
-<li>TCP提供可靠交付服务</li>
-<li>提供全双工通信</li>
-<li>面向字节流</li>
-</ol>
-<h4 id="TCP报文段的首部格式"><a href="#TCP报文段的首部格式" class="headerlink" title="TCP报文段的首部格式"></a>TCP报文段的首部格式</h4><p>一个TCP报文分为首部和数据两部分。</p>
-<p>TCP首部的前20个字节是固定的，后面4n个字节是根据需要而增加的选项。因此TCP首部的最小长度是20字节。</p>
-<p>首部固定部分个字段的意义：</p>
-<ol>
-<li><p>源端口和目的端口   各占2字节。</p>
-</li>
-<li><p>序号  占4字节。在一个TCP连接中传送的字节流中的每一个字节都按顺序编号。首部中的序号字段值则指的是本报文段所发送的数据的第一个字节的序号。例如，一报文段的序号字段值是301，而携带的数据共有100字节。则下一个报文段的序号字段值为401.</p>
-</li>
-<li><p>确认号   占4字节，示期望收到对方下一个报文段的第一个数据字节的序号。若确认号为N，则表明到序号N-1为止的所有数据都已正确收到。</p>
-</li>
-<li><p>数据偏移  占4位，它指出TCP报文段的数据起始处距离TCP报文段的起始处有多远。这个字段实际上是指出TCP报文段的首部长度。TCP报文首部的最大长度是60字节。</p>
-</li>
-<li><p>保留  占6位，保留位今后所用，目前置0.</p>
-</li>
-</ol>
-<p>下面有六个控制位说明本报文段的性质。</p>
-<ol start="6">
-<li><p>紧急URG  当URG=1时，表明紧急指针字段有效。它告诉系统此报文段中有紧急数据，应尽快传送，而不要按原来的排队顺序来传送。</p>
-</li>
-<li><p>确认ACK   当ACK=1时确认号字段才有效。TCP规定，在连接建立后所有传送的报文都必须把ACK置1.</p>
-</li>
-<li><p>推送PSH  当两个应用进程进行交互通信时，有时在一端的应用进程希望在键入一个命令后立即就能收到对方的响应。在这个时候，发送方将PSH置1，并立即创建一个报文段发送出去。接收方TCP收到PSH=1的报文后，就尽快交付给进程，而不再等待缓存都填满后再交付。</p>
-</li>
-<li><p>复位RST  当RST=1时，表明TCP连接中出现重大错误，需要释放连接。还可以用来拒绝打开一个连接或非法报文。</p>
-</li>
-<li><p>同步SYN  在连接建立时用来同步序号。当SYN = 1而ACK = 0时，表明这是一个连接请求报文。若对方同意连接，则应在响应的报文段中使SYN=1和ACK=1.因此SYN=1表示这是一个连接请求或连接接收报文。</p>
-</li>
-<li><p>终止FIN  用来释放一个连接。当FIN=1时，表明此报文段的发送方的数据已经发送完毕，并要求释放运输连接。</p>
-</li>
-<li><p>窗口  占2字节。指明了现在允许对方发送的数据量。</p>
-</li>
-<li><p>校验和  占2字节。校验和字段检验首部和数据两部分。</p>
-</li>
-<li><p>紧急指针  占2字节。仅在URG=1才有意义，指出本报文段中的紧急数据字节数。</p>
-</li>
-<li><p>选项  长度可变，最长可达40字节。</p>
-</li>
-</ol>
-<p>MSS最大报文段长度，是每一个TCP报文段中的数据字段的最大长度。</p>
-
-          
+          地址解析协议（ARP）是指网络地址和MAC地址之间的转换
+当一台主机需要向另一台主机发送数据时，需要知道目的主机的ip地址外还需要知道目的主机的mac地址。源主机首先会在自己的ARP表中寻找目的ip对应的mac地址，无法找到则发出一个arp广播包，目的主机收到广播包后发送一个响应报文告知源主机自己的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/19/%E5%9C%B0%E5%9D%80%E8%A7%A3%E6%9E%90%E5%8D%8F%E8%AE%AE%EF%BC%88ARP%EF%BC%89/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1181,7 +884,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%E5%8F%8A%E8%AE%BE%E8%AE%A1%E6%96%B9%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kcy">
@@ -1200,7 +903,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/12/19/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/" itemprop="url">数据链路层</a></h1>
+                <a class="post-title-link" href="/2019/12/19/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%E5%8F%8A%E8%AE%BE%E8%AE%A1%E6%96%B9%E5%BC%8F/" itemprop="url">分库分表使用场景及设计方式</a></h1>
         
 
         <div class="post-meta">
@@ -1212,7 +915,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T00:01:49+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T04:29:20+08:00">
                 2019-12-19
               </time>
             
@@ -1235,8 +938,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资料</span>
                   </a>
                 </span>
 
@@ -1274,52 +977,15 @@
       
         
           
-            <h3 id="数据链路层的基本概念"><a href="#数据链路层的基本概念" class="headerlink" title="数据链路层的基本概念"></a>数据链路层的基本概念</h3><p>一、数据链路层使用的信道主要有以下两种类型:</p>
-<ul>
-<li>点对点信道：这种信道使用一对一的点对点通信方式。</li>
-<li>广播通信：这种信道使用一对多的广播通信方式。</li>
-</ul>
-<p>二、链路和数据链路的区别:</p>
-<ul>
-<li>链路: 是一条点到点的物理路段,中间没有其他任何点。一条链路只是一条通路的一个组成部分。</li>
-<li>数据链路: 除了物理线路外,还必须有通信协议来控制这些数据的传输。若把实现这些协议的硬件和软件加到链路上,就构成了数据链路。<br> 数据链路层把网络层交下来的数据构成帧发送到链路上,以及把接收到的帧中的数据取出上交给网络层.在因特网中,网络协议数据单元就是IP数据报(简称数据报,分组或包)</li>
-</ul>
-<p>三、数据链路层的三个基本问题</p>
-<ol>
-<li>封装成帧(framing)<br>​    就是在一段数据的前后分别添加首部和尾部,这样就构成了一个帧,确定帧的界限。<br> 我们知道:所有在因特网上传送的数据都是以分组(即IP数据报)为传送单位的,网络层饿IP数据传送到数据链路层就成为帧的数据部分.帧的数据部分的前面和后面分别添加上首部和尾部,就构成了一个完整的帧.这样的帧就是数据链路层的数据传输单元。首部和尾部的一个重要作用就是进行帧定界。</li>
-<li>透明传输<br> 由于帧的开始和结束的标记是使用专门指明的控制字符,因此,所传输的数据中的任何8比特的组合一定不允许和用作帧定界的控制字符的比特编码一样,否则就会出现帧定界错误。<br>数据链路层对这些数据来说是透明的:表示无论什么样的比特组合的数据都能够通过数据链路层.</li>
-<li>差错检测<br>​    在一段时间内,传输错误的比特占所传输比特总数的比率称为误码率(BER)<br>​    为了保证数据传输的可靠性,在计算机网络传输数据时,必须采用各种差错检测措施.目前在数据链路层广泛使用了循环冗余检验CRC的检测技术.<br> 仅用循环冗余检验CRC差错检测技术只能做到无差错接受,即近似地认为:”反是接收端数据链路层接受的帧均无差错”</li>
-</ol>
-<h3 id="点对点协议PPP"><a href="#点对点协议PPP" class="headerlink" title="点对点协议PPP"></a>点对点协议PPP</h3><p>PPP协议就是用户计算机和ISP进行通信时所使用的数据链路层协议.<br>PPP协议的组成:</p>
-<ul>
-<li>一个将IP数据报封装到串行链路的方法.</li>
-<li>一个用来建立,配置和测试数据链路连接的链路控制协议LCP</li>
-<li>一套网络控制协议NCP,其中每一个协议支持不同的网络层协议,如IP,OSI的网络层,DECnet,以及AppleTalk等.</li>
-</ul>
-<h3 id="以太网"><a href="#以太网" class="headerlink" title="以太网"></a>以太网</h3><ul>
-<li><p>以太网的两个标准</p>
-<blockquote>
-<p>DIX  Ethernet V2<br>IEEE 的 802.3标准</p>
-</blockquote>
-</li>
-<li><p>以太网和数据链路层的两个子层</p>
-<blockquote>
-<p>为了使数据链路层能够更好地适应多种局域网标准,IEEE 802 委员会就把局域网的数据链路层拆成两个子层,即逻辑链路控制层LLC子层和媒体接入层MAC子层.<br>与接入到传输媒体有关的内容都放在MAC子层,LLC子层则与传输媒体无关,不管采用何种传输媒体和MAC子层的局域网对LLC子层来说都是透明的.</p>
-</blockquote>
-</li>
-<li><p>以太网提供的服务</p>
-<blockquote>
-<p>以太网提供的服务是不可靠的交付,基金最大努力的交付.<br>​当接收站收到有差错的数据帧时就丢弃此帧,其他什么也不做.差错的纠正由高层决定.<br>​如果高层发现丢失了一些数据而进行重传,但以太网并不知道这是一个重传的帧,而是当作一个新的数据帧来发送.</p>
-</blockquote>
-</li>
-<li><p>MAC层的硬件地址</p>
-<blockquote>
-<p>局域网中,硬件地址又称物理地址,或MAC地址</p>
-</blockquote>
-</li>
-</ul>
-
-          
+          一. 分表场景：对于大型的互联网应用来说，数据库单表的记录行数可能达到千万级甚至是亿级，并且数据库面临着极高的并发访问。采用Master-Slave复制模式的MySQL架构，只能够对数据库的读进行扩展，而对数据库的写入操作还是集中在Master上，并且单个Master挂载的Slave也不可能无限制多
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/19/%E5%88%86%E5%BA%93%E5%88%86%E8%A1%A8%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF%E5%8F%8A%E8%AE%BE%E8%AE%A1%E6%96%B9%E5%BC%8F/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1366,7 +1032,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/18/hello-world/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E5%90%8C%E6%AD%A5%E5%BC%82%E6%AD%A5-%E9%98%BB%E5%A1%9E%E9%9D%9E%E9%98%BB%E5%A1%9E/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kcy">
@@ -1385,7 +1051,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2019/12/18/hello-world/" itemprop="url">物理层</a></h1>
+                <a class="post-title-link" href="/2019/12/19/%E5%90%8C%E6%AD%A5%E5%BC%82%E6%AD%A5-%E9%98%BB%E5%A1%9E%E9%9D%9E%E9%98%BB%E5%A1%9E/" itemprop="url">同步异步 阻塞非阻塞</a></h1>
         
 
         <div class="post-meta">
@@ -1397,8 +1063,135 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-18T01:13:22+08:00">
-                2019-12-18
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T04:23:35+08:00">
+                2019-12-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          1.同步与异步
+同步和异步关注的是消息通信机制 (synchronous communication/ asynchronous communication)所谓同步，就是在发出一个调用时，在没有得到结果之前，该调用就不返回。但是一旦调用返回，就得到返回值了。换句话说，就是由调用者主动等待这个调用的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/19/%E5%90%8C%E6%AD%A5%E5%BC%82%E6%AD%A5-%E9%98%BB%E5%A1%9E%E9%9D%9E%E9%98%BB%E5%A1%9E/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/FTP%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kcy的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/19/FTP%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0/" itemprop="url">FTP断点续传</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T04:12:50+08:00">
+                2019-12-19
               </time>
             
 
@@ -1420,8 +1213,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index">
-                    <span itemprop="name">学习笔记</span>
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资料</span>
                   </a>
                 </span>
 
@@ -1459,42 +1252,465 @@
       
         
           
-            <h3 id="物理层的基本概念"><a href="#物理层的基本概念" class="headerlink" title="物理层的基本概念"></a>物理层的基本概念</h3><blockquote>
-<p>物理层解决如何在连接各种计算机的传输媒体上数据比特流,而不指具体的传输媒体。可以将物理层的主要任务描述为确定与传输媒体的接口有关的一些特性。机械特性接口形状,尺寸,引脚数目和排列。</p>
-</blockquote>
-<h3 id="物理层的作用"><a href="#物理层的作用" class="headerlink" title="物理层的作用"></a>物理层的作用</h3><blockquote>
-<p>在计算机之间进行比特流传入。屏蔽到传输媒介和通信手段的差异，使数据链路层无需考虑这些问题。同时计算机多采用并行传输，而通信线路多采用串行传输，因此物理层还要完成传输方式的转换。主要任务就是确认与传输媒介的接口的特征。</p>
-</blockquote>
-<h3 id="物理层下面的传输媒体"><a href="#物理层下面的传输媒体" class="headerlink" title="物理层下面的传输媒体"></a>物理层下面的传输媒体</h3><ol>
-<li>导向传输媒体：导向传输媒体中,电磁波沿着固体媒体传播。具体有:<ol>
-<li>双绞线<ul>
-<li>屏蔽双绞线STP</li>
-<li>无屏蔽双绞线UTP</li>
-</ul>
-</li>
-<li>同轴电缆<ul>
-<li>50Ω同轴电缆 由于数字传输,多用于基带传输</li>
-<li>75Ω同轴电缆 用于模拟传输,即宽带同轴电缆</li>
-</ul>
-</li>
-<li>光纤</li>
-</ol>
-</li>
-<li>非导向传输媒体：就是指自由空间,其中的电磁波传输被称为无线传输  无线传输所使用的频段很广<ul>
-<li>短波通讯主要是靠电离层的反射,但短波信道的通信质量较差</li>
-<li>微波在空间主要是直线传播  地面微波接力传播 卫星通信</li>
-</ul>
-</li>
-</ol>
-<h3 id="信道复用技术"><a href="#信道复用技术" class="headerlink" title="信道复用技术"></a>信道复用技术</h3><ul>
-<li>频分复用：在分配到一定的频率后,在通信过程中自始至终都占用这个频带。频分复用的所用用户在同样的时间占用不同的带宽资源(这里的带宽指的是频率带宽而不是数据的发送频率)</li>
-<li>时分复用：是将时间划分为一段段等长的时分复用帧.每一个时分复用的用户在每一个TDM帧占用固定的时隙。时分复用的所有用户是在不同的时间占用同样的频带宽度。</li>
-<li>统计时分复用：​是一种改进的时分复用,他能明显地提高信道的利用率</li>
-<li>波分复用：就是光的频分复用。</li>
-<li>码分复用CDM：是另一种共享信道的方法,实际上更常用的是码分多址CDMA.每个用户可以在同样的时间使用同样的频带进行通信.由于个用户使用经过特殊挑选的不同码型,因此各用户之间不会造成干扰。</li>
-</ul>
+          一，最重要的一点，断点续传需要服务器的支持，这个是必要条件。  传统的FTP   SERVER是不支持断点续传的，因为它不支持REST指令，传统的FTP指令（我是指服务器端指令）并不包括REST指令。       
+  第二，客户端要知道使用REST等一系列指令来作断点续传。       
+  看看
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/19/FTP%E6%96%AD%E7%82%B9%E7%BB%AD%E4%BC%A0/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E6%8A%93%E5%8C%85%E5%8E%9F%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kcy的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/19/%E6%8A%93%E5%8C%85%E5%8E%9F%E7%90%86/" itemprop="url">抓包原理</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T02:11:12+08:00">
+                2019-12-19
+              </time>
+            
+
+            
+
+            
+          </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资料</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          一、预备知识1.集线器（hub）它属于纯硬件网络底层设备，工作于OSI参考模型的第一层，即物理层。不解析。
+集线器只对信号进行整形、放大后再重发，不进行编码，转发的时候是以广播的方式进行的，即它要向某节点发送数据时，不是直接把数据发送到目的节点，而是把数据包发送到与集线器相连的所有节点。
+2.交换机
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/19/%E6%8A%93%E5%8C%85%E5%8E%9F%E7%90%86/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/HTTP%E5%8D%8F%E8%AE%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kcy的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/19/HTTP%E5%8D%8F%E8%AE%AE/" itemprop="url">HTTP协议</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T01:59:52+08:00">
+                2019-12-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资料</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          HTTP协议简介超文本传输协议（英文：HyperText Transfer Protocol，缩写：HTTP）是一种用于分布式、协作式和超媒体信息系统的应用层协议。HTTP是万维网的数据通信的基础。
+HTTP的发展是由蒂姆·伯纳斯-李于1989年在欧洲核子研究组织（CERN）所发起。HTTP的标准制
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/19/HTTP%E5%8D%8F%E8%AE%AE/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/TCP%E5%8D%8F%E8%AE%AE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="kcy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="kcy的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2019/12/19/TCP%E5%8D%8F%E8%AE%AE/" itemprop="url">TCP协议</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T01:44:36+08:00">
+                2019-12-19
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%AD%A6%E4%B9%A0%E8%B5%84%E6%96%99/" itemprop="url" rel="index">
+                    <span itemprop="name">学习资料</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+          为什么会有TCP/IP协议
+在世界上各地，各种各样的电脑运行着各自不同的操作系统为大家服务，这些电脑在表达同一种信息的时候所使用的方法是千差万别。就好像圣经中上帝打乱了各地人的口音，让他们无法合作一样。计算机使用者意识到，计算机只是单兵作战并不会发挥太大的作用。只有把它们联合起来，电脑才会发挥出它最
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2019/12/19/TCP%E5%8D%8F%E8%AE%AE/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1531,6 +1747,10 @@
   </section>
 
   
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="extend next" rel="next" href="/page/2/">&lt;i class&#x3D;&quot;fa fa-angle-right&quot;&gt;&lt;&#x2F;i&gt;</a>
+  </nav>
+
 
 
           </div>
@@ -1574,7 +1794,7 @@
               
                 <a href="/archives/%7C%7C%20archive">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -1585,7 +1805,7 @@
               
               <div class="site-state-item site-state-categories">
                 
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">分类</span>
                 
               </div>
