@@ -79,14 +79,14 @@
 
 
 
-<meta name="description" content="数据链路层的基本概念一、数据链路层使用的信道主要有以下两种类型:  点对点信道：这种信道使用一对一的点对点通信方式。 广播通信：这种信道使用一对多的广播通信方式。  二、链路和数据链路的区别:  链路: 是一条点到点的物理路段,中间没有其他任何点。一条链路只是一条通路的一个组成部分。 数据链路: 除了物理线路外,还必须有通信协议来控制这些数据的传输。若把实现这些协议的硬件和软件加到链路上,就构成了">
+<meta name="description" content="应用层概念 应用层的具体作用就是规定应用进程在通信时所遵循的协议  域名系统DNS 域名系统(DNS)是因特网使用的命名系统，用来把便于人们使用的机器名字转化为IP地址。   在1983年，因特网就开始采用层次树状结构的命名方法，并使用分布式的域名系统。   DNS使大多数的名字都在本地解析。域名到IP地址的解析，是由分布在因特网上的许多域名服务(也称域名服务器)共同完成的。域名服务器程序在专设的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="数据链路层">
-<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;kcyyyy&#x2F;kcyyyy.github.io.git&#x2F;2019&#x2F;12&#x2F;19&#x2F;%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82&#x2F;index.html">
+<meta property="og:title" content="应用层">
+<meta property="og:url" content="https:&#x2F;&#x2F;github.com&#x2F;kcyyyy&#x2F;kcyyyy.github.io.git&#x2F;2019&#x2F;12&#x2F;19&#x2F;%E5%BA%94%E7%94%A8%E5%B1%82&#x2F;index.html">
 <meta property="og:site_name" content="kcy的博客">
-<meta property="og:description" content="数据链路层的基本概念一、数据链路层使用的信道主要有以下两种类型:  点对点信道：这种信道使用一对一的点对点通信方式。 广播通信：这种信道使用一对多的广播通信方式。  二、链路和数据链路的区别:  链路: 是一条点到点的物理路段,中间没有其他任何点。一条链路只是一条通路的一个组成部分。 数据链路: 除了物理线路外,还必须有通信协议来控制这些数据的传输。若把实现这些协议的硬件和软件加到链路上,就构成了">
-<meta property="article:published_time" content="2019-12-18T16:01:49.000Z">
-<meta property="article:modified_time" content="2019-12-18T16:03:35.098Z">
+<meta property="og:description" content="应用层概念 应用层的具体作用就是规定应用进程在通信时所遵循的协议  域名系统DNS 域名系统(DNS)是因特网使用的命名系统，用来把便于人们使用的机器名字转化为IP地址。   在1983年，因特网就开始采用层次树状结构的命名方法，并使用分布式的域名系统。   DNS使大多数的名字都在本地解析。域名到IP地址的解析，是由分布在因特网上的许多域名服务(也称域名服务器)共同完成的。域名服务器程序在专设的">
+<meta property="article:published_time" content="2019-12-18T16:06:49.000Z">
+<meta property="article:modified_time" content="2019-12-18T16:33:42.858Z">
 <meta property="article:author" content="kcy">
 <meta name="twitter:card" content="summary">
 
@@ -118,13 +118,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/数据链路层/"/>
+  <link rel="canonical" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/应用层/"/>
 
 
 
 
 
-  <title>数据链路层 | kcy的博客</title>
+  <title>应用层 | kcy的博客</title>
   
 
 
@@ -275,7 +275,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E6%95%B0%E6%8D%AE%E9%93%BE%E8%B7%AF%E5%B1%82/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/kcyyyy/kcyyyy.github.io.git/2019/12/19/%E5%BA%94%E7%94%A8%E5%B1%82/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="kcy">
@@ -292,7 +292,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">数据链路层</h1>
+          <h1 class="post-title" itemprop="name headline">应用层</h1>
         
 
         <div class="post-meta">
@@ -304,7 +304,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T00:01:49+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-12-19T00:06:49+08:00">
                 2019-12-19
               </time>
             
@@ -342,50 +342,107 @@
       
 
       
-        <h3 id="数据链路层的基本概念"><a href="#数据链路层的基本概念" class="headerlink" title="数据链路层的基本概念"></a>数据链路层的基本概念</h3><p>一、数据链路层使用的信道主要有以下两种类型:</p>
-<ul>
-<li>点对点信道：这种信道使用一对一的点对点通信方式。</li>
-<li>广播通信：这种信道使用一对多的广播通信方式。</li>
-</ul>
-<p>二、链路和数据链路的区别:</p>
-<ul>
-<li>链路: 是一条点到点的物理路段,中间没有其他任何点。一条链路只是一条通路的一个组成部分。</li>
-<li>数据链路: 除了物理线路外,还必须有通信协议来控制这些数据的传输。若把实现这些协议的硬件和软件加到链路上,就构成了数据链路。<br> 数据链路层把网络层交下来的数据构成帧发送到链路上,以及把接收到的帧中的数据取出上交给网络层.在因特网中,网络协议数据单元就是IP数据报(简称数据报,分组或包)</li>
-</ul>
-<p>三、数据链路层的三个基本问题</p>
+        <h3 id="应用层概念"><a href="#应用层概念" class="headerlink" title="应用层概念"></a>应用层概念</h3><blockquote>
+<p>应用层的具体作用就是规定应用进程在通信时所遵循的协议</p>
+</blockquote>
+<h3 id="域名系统DNS"><a href="#域名系统DNS" class="headerlink" title="域名系统DNS"></a>域名系统DNS</h3><blockquote>
+<p>域名系统(DNS)是因特网使用的命名系统，用来把便于人们使用的机器名字转化为IP地址。</p>
+</blockquote>
+<blockquote>
+<p>在1983年，因特网就开始采用层次树状结构的命名方法，并使用分布式的域名系统。</p>
+</blockquote>
+<blockquote>
+<p>DNS使大多数的名字都在本地解析。域名到IP地址的解析，是由分布在因特网上的许多域名服务(也称域名服务器)共同完成的。域名服务器程序在专设的结点上运行，而人们也常把运行域名服务程序的机器称为域名服务器。</p>
+</blockquote>
+<blockquote>
+<p>域名的解析过程：<br>第一，主机向本地域名服务器的查询一般都采用递归查询。<br>第二，本地域名服务器向根域名服务器的查询通常采用迭代查询。</p>
+</blockquote>
+<h3 id="HDCP服务"><a href="#HDCP服务" class="headerlink" title="HDCP服务"></a>HDCP服务</h3><blockquote>
+<p>动态主机配置协议 DHCP：负责给互联网上的计算机提供动态的IP地址。<br>连接到因特网的计算机都需要配置以下几个项目： </p>
 <ol>
-<li>封装成帧(framing)<br>​    就是在一段数据的前后分别添加首部和尾部,这样就构成了一个帧,确定帧的界限。<br> 我们知道:所有在因特网上传送的数据都是以分组(即IP数据报)为传送单位的,网络层饿IP数据传送到数据链路层就成为帧的数据部分.帧的数据部分的前面和后面分别添加上首部和尾部,就构成了一个完整的帧.这样的帧就是数据链路层的数据传输单元。首部和尾部的一个重要作用就是进行帧定界。</li>
-<li>透明传输<br> 由于帧的开始和结束的标记是使用专门指明的控制字符,因此,所传输的数据中的任何8比特的组合一定不允许和用作帧定界的控制字符的比特编码一样,否则就会出现帧定界错误。<br>数据链路层对这些数据来说是透明的:表示无论什么样的比特组合的数据都能够通过数据链路层.</li>
-<li>差错检测<br>​    在一段时间内,传输错误的比特占所传输比特总数的比率称为误码率(BER)<br>​    为了保证数据传输的可靠性,在计算机网络传输数据时,必须采用各种差错检测措施.目前在数据链路层广泛使用了循环冗余检验CRC的检测技术.<br> 仅用循环冗余检验CRC差错检测技术只能做到无差错接受,即近似地认为:”反是接收端数据链路层接受的帧均无差错”</li>
+<li>IP 地址 </li>
+<li>子网掩码 </li>
+<li>默认路由器的 IP 地址即网关 </li>
+<li>域名服务器的 IP 地址</li>
 </ol>
-<h3 id="点对点协议PPP"><a href="#点对点协议PPP" class="headerlink" title="点对点协议PPP"></a>点对点协议PPP</h3><p>PPP协议就是用户计算机和ISP进行通信时所使用的数据链路层协议.<br>PPP协议的组成:</p>
+</blockquote>
+<blockquote>
+<p>IP地址获取方式有两种：</p>
 <ul>
-<li>一个将IP数据报封装到串行链路的方法.</li>
-<li>一个用来建立,配置和测试数据链路连接的链路控制协议LCP</li>
-<li>一套网络控制协议NCP,其中每一个协议支持不同的网络层协议,如IP,OSI的网络层,DECnet,以及AppleTalk等.</li>
+<li>静态IP是人工自己指定的，一般公司自己组建的局域网、学校机房的固定的计算机、机房服务器、互联网上的大型服务器，凡是位置固定不动的，都用静态IP地址。 </li>
+<li>动态IP地址是用DHCP服务器来分配的地址，适用于计算机位置不固定、家庭拨号上网等情况。可以避免产生IP地址冲突。</li>
 </ul>
-<h3 id="以太网"><a href="#以太网" class="headerlink" title="以太网"></a>以太网</h3><ul>
-<li><p>以太网的两个标准</p>
-<blockquote>
-<p>DIX  Ethernet V2<br>IEEE 的 802.3标准</p>
 </blockquote>
-</li>
-<li><p>以太网和数据链路层的两个子层</p>
 <blockquote>
-<p>为了使数据链路层能够更好地适应多种局域网标准,IEEE 802 委员会就把局域网的数据链路层拆成两个子层,即逻辑链路控制层LLC子层和媒体接入层MAC子层.<br>与接入到传输媒体有关的内容都放在MAC子层,LLC子层则与传输媒体无关,不管采用何种传输媒体和MAC子层的局域网对LLC子层来说都是透明的.</p>
+<p>DHCP服务器既可以给本网段计算机分配地址，也可以跨网段分配地址。DHCP服务器想给几个网段的计算机分配地址，就得先创建几个作用域。区别是，本网段的计算机请求地址，发广播，DHCP服务器能直接收到请求；而外网段的计算机请求地址，先发广播让外网段的网关收到（网关隔绝广播，为了能使这条请求发出去，路由器上需要特殊配置一下Router(config-if)#ip helper-address 192.168.0.100这个IP是DHCP服务器地址），该网关把请求通过互联网发送给DHCP服务器（这时候就是点对点通信而不是广播了）</p>
 </blockquote>
-</li>
-<li><p>以太网提供的服务</p>
-<blockquote>
-<p>以太网提供的服务是不可靠的交付,基金最大努力的交付.<br>​当接收站收到有差错的数据帧时就丢弃此帧,其他什么也不做.差错的纠正由高层决定.<br>​如果高层发现丢失了一些数据而进行重传,但以太网并不知道这是一个重传的帧,而是当作一个新的数据帧来发送.</p>
-</blockquote>
-</li>
-<li><p>MAC层的硬件地址</p>
-<blockquote>
-<p>局域网中,硬件地址又称物理地址,或MAC地址</p>
-</blockquote>
-</li>
+<h3 id="FTP文件传送协议"><a href="#FTP文件传送协议" class="headerlink" title="FTP文件传送协议"></a>FTP文件传送协议</h3><blockquote>
+<p>FTP连接方式 </p>
+<ul>
+<li>控制连接：标准端口为21，用于发送FTP命令信息。 </li>
+<li>数据连接：标准端口为20，用于上传、下载数据。 </li>
 </ul>
+</blockquote>
+<blockquote>
+<p>客户端选择数据连接的建立类型 </p>
+<ul>
+<li>主动模式：FTP客户端告诉FTP服务器使用什么端口，FTP服务器就主动用自己的20端口和FTP客户端的这个端口建立连接。 </li>
+<li>被动模式：服务端在指定范围内打开一个新的端口，被动等待客户端发起连接。 </li>
+</ul>
+</blockquote>
+<blockquote>
+<p>FTP传输模式 </p>
+<ul>
+<li>文本模式：ASCII模式，以文本序列传输数据 </li>
+<li>二进制模式：Binary模式，以二进制序列传输数据 </li>
+</ul>
+</blockquote>
+<h3 id="远程终端协议TELNET"><a href="#远程终端协议TELNET" class="headerlink" title="远程终端协议TELNET"></a>远程终端协议TELNET</h3><blockquote>
+<p>只要网络通，就能利用telnet输入命令来远程控制另一台计算机。一般多用来远程配置路由器。使用TCP的23端口。</p>
+</blockquote>
+<h3 id="HTTP协议"><a href="#HTTP协议" class="headerlink" title="HTTP协议"></a>HTTP协议</h3><blockquote>
+<p>是用的最多的协议，用来访问网站的协议。使用TCP的80端口。</p>
+</blockquote>
+<blockquote>
+<p>为何访问网站要用域名？</p>
+<ul>
+<li>网站的标识有IP地址、端口和域名。因此访问网站时，为了区分不同的网站，可以使用不同的IP地址、不同的端口或不同的主机头（域名）。</li>
+<li>同一个服务器上如果有好几个网站，这些网站如果都使用一个服务器IP地址，都使用80端口，会有冲突。解决方法一是给服务器多加几个IP地址，一个网站用一个；二是给不同网站用不同的端口号，不要都用80端口。然而这两种方式都不方便。如果服务器只有一个地址，并且端口号只想用80，那么可以在服务器设置网站的访问方式，设置成只能用域名来访问。但是用域名访问，还需要在DNS里把记录加上。目前网络上各大服务器中存储的成千上万的网站，都是用最后一种方法，用域名访问来实现的。</li>
+</ul>
+</blockquote>
+<blockquote>
+<p>使用Web代理服务器访问网站</p>
+<p>访问网站时不直接访问，而是先访问代理服务器，代理服务器去找目标网站，然后再把得到的网站返回给请求计算机。</p>
+</blockquote>
+<blockquote>
+<p>好处： </p>
+<ul>
+<li>节省内网访问Internet的带宽，加快上网速度。注意：别傻逼地用国外的代理上国内的网站，那得慢死！ </li>
+<li>通过Web代理绕过防火墙。翻墙软件就是使用国外的代理来上网的，能避免国内路由器的封锁； </li>
+<li>避免追踪。如果在网上发帖子，不想让别人查到自己的地址，那就用代理在网上发帖子。ISP那边的记录，只能查到是代理在发帖子，查不到自己这里。 </li>
+<li>不用配网关（要上网的电脑和代理服务器在一个网段）、不用配DNS也能上网。 </li>
+</ul>
+</blockquote>
+<blockquote>
+<p>应用：在一个网段的计算机里，只要有一台计算机能上网，其他计算机就可以通过这台能上网的计算机上网。做法是将这台能上网的计算机设置成代理服务器，其他计算机指向它。</p>
+</blockquote>
+<h3 id="电子邮件服务"><a href="#电子邮件服务" class="headerlink" title="电子邮件服务"></a>电子邮件服务</h3><blockquote>
+<ul>
+<li>发送邮件的协议：SMTP使用TCP的25端口 </li>
+<li>读取邮件的协议：POP3 使用TCP的110端口和 IMAP使用TCP的143端口 </li>
+</ul>
+</blockquote>
+<blockquote>
+<p>收发邮件的过程如下：</p>
+<ol>
+<li>发件人调用PC机中的用户代理撰写和编辑要发送的邮件。 </li>
+<li>发件人的用户代理把邮件用SMTP协议发给发送方邮件服务器。 </li>
+<li>SMTP服务器把邮件临时存放在邮件缓存队列中，等待发送。 </li>
+<li>发送方邮件服务器的SMTP客户与接收方邮件服务器的SMTP服务器建立TCP连接，然后就把邮件缓存队列中的邮件依次发送出去。 </li>
+<li>运行在接收方邮件服务器中的SMTP服务器进程收到邮件后，把邮件放入收件人的用户邮箱中，等待收件人进行读取。 </li>
+<li>收件人在打算收信时，就运行PC机中的用户代理，使用POP3（或IMAP）协议读取发送给自己的邮件。</li>
+</ol>
+</blockquote>
 
       
     </div>
@@ -410,8 +467,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/12/16/hello-world/" rel="next" title="物理层">
-                <i class="fa fa-chevron-left"></i> 物理层
+              <a href="/2019/12/19/%E7%BD%91%E7%BB%9C%E5%B1%82/" rel="next" title="网络层">
+                <i class="fa fa-chevron-left"></i> 网络层
               </a>
             
           </div>
@@ -419,10 +476,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/12/19/%E8%BF%90%E8%BE%93%E5%B1%82/" rel="prev" title="运输层">
-                运输层 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -536,7 +589,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#数据链路层的基本概念"><span class="nav-number">1.</span> <span class="nav-text">数据链路层的基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#点对点协议PPP"><span class="nav-number">2.</span> <span class="nav-text">点对点协议PPP</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#以太网"><span class="nav-number">3.</span> <span class="nav-text">以太网</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#应用层概念"><span class="nav-number">1.</span> <span class="nav-text">应用层概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#域名系统DNS"><span class="nav-number">2.</span> <span class="nav-text">域名系统DNS</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HDCP服务"><span class="nav-number">3.</span> <span class="nav-text">HDCP服务</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#FTP文件传送协议"><span class="nav-number">4.</span> <span class="nav-text">FTP文件传送协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#远程终端协议TELNET"><span class="nav-number">5.</span> <span class="nav-text">远程终端协议TELNET</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTTP协议"><span class="nav-number">6.</span> <span class="nav-text">HTTP协议</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电子邮件服务"><span class="nav-number">7.</span> <span class="nav-text">电子邮件服务</span></a></li></ol></div>
             
 
           </div>
